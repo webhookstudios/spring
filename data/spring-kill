@@ -1,0 +1,17 @@
+#!/bin/sh
+# Ends one process for Spring. Run through pkexec, which asks for the
+# password first, when the process belongs to another user or the system.
+#   spring-kill TERM|KILL <pid>
+set -e
+case "$1" in
+    TERM|KILL) ;;
+    *) echo "spring-kill: the signal must be TERM or KILL" >&2; exit 2 ;;
+esac
+case "$2" in
+    ''|*[!0-9]*) echo "spring-kill: the process id must be a number" >&2; exit 2 ;;
+esac
+if [ "$2" -le 1 ]; then
+    echo "spring-kill: will not end process $2" >&2
+    exit 2
+fi
+exec /usr/bin/kill -s "$1" "$2"

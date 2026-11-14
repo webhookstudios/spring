@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=Spring
+GenericName=Task Manager Settings
+Comment=Change how the Spring task manager in the top bar looks and updates
+Exec=@EXEC@
+Icon=@ICON@
+Terminal=false
+StartupNotify=false
+Categories=Settings;GNOME;GTK;System;Monitor;
+Keywords=sedge;task;manager;process;processes;cpu;memory;usage;monitor;end;quit;kill;extension;

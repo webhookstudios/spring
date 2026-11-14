@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.spring"
+          path="/org/gnome/shell/extensions/spring/">
+
+    <!-- How often -->
+    <key name="refresh-interval" type="d">
+      <default>2.0</default>
+      <range min="1.0" max="10.0"/>
+      <summary>Seconds between updates</summary>
+      <description>Used for the top bar and for the open panel. App and process figures are only read while the panel is open.</description>
+    </key>
+
+    <!-- Top bar -->
+    <key name="show-bars" type="b">
+      <default>true</default>
+      <summary>Show two small usage bars next to the icon</summary>
+      <description>One for the processor and one for memory.</description>
+    </key>
+    <key name="show-numbers" type="b">
+      <default>false</default>
+      <summary>Show processor and memory figures next to the icon</summary>
+    </key>
+    <key name="memory-format" type="s">
+      <choices>
+        <choice value="percent"/>
+        <choice value="amount"/>
+      </choices>
+      <default>'percent'</default>
+      <summary>Show memory in the top bar as a percentage or an amount</summary>
+    </key>
+    <key name="panel-position" type="s">
+      <choices>
+        <choice value="left"/>
+        <choice value="right"/>
+      </choices>
+      <default>'left'</default>
+      <summary>Place the icon to the left or the right of the system menu</summary>
+    </key>
+
+    <!-- Lists -->
+    <key name="cpu-per-core" type="b">
+      <default>false</default>
+      <summary>Count processor use per core</summary>
+      <description>Off: 100% means the whole processor is busy. On: 100% means one core is busy, so a busy app can show more than 100%.</description>
+    </key>
+    <key name="show-other-users" type="b">
+      <default>true</default>
+      <summary>List processes of other users and the system</summary>
+    </key>
+    <key name="process-limit" type="i">
+      <default>60</default>
+      <range min="20" max="200"/>
+      <summary>Most processes listed at once</summary>
+      <description>Search to find the rest.</description>
+    </key>
+    <key name="confirm-end" type="b">
+      <default>true</default>
+      <summary>Ask before ending an app or process</summary>
+    </key>
+    <key name="process-sort" type="s">
+      <choices>
+        <choice value="cpu"/>
+        <choice value="memory"/>
+        <choice value="name"/>
+      </choices>
+      <default>'cpu'</default>
+      <summary>How the process list is sorted</summary>
+    </key>
+  </schema>
+</schemalist>

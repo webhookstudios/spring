@@ -1,0 +1,108 @@
+/* Spring follows the shell theme; only layout and a few accents are set here. */
+
+/* Top bar */
+.spring-panel-box { spacing: 5px; }
+.spring-bars { spacing: 2px; }
+.spring-bar {
+    width: 4px;
+    height: 14px;
+    border-radius: 2px;
+    background-color: rgba(255, 255, 255, 0.22);
+}
+.spring-bar-fill { border-radius: 2px; }
+.spring-bar-cpu .spring-bar-fill { background-color: -st-accent-color; }
+.spring-bar-mem .spring-bar-fill { background-color: rgba(255, 255, 255, 0.85); }
+.spring-figures { font-feature-settings: "tnum"; font-size: 0.92em; }
+
+/* Panel */
+.spring-menu { min-width: 440px; }
+.spring-item { padding: 0; }
+.spring-item:hover, .spring-item:focus, .spring-item:active { background-color: transparent; }
+.spring-root { padding: 6px 8px 4px 8px; spacing: 6px; width: 440px; }
+
+.spring-cards { spacing: 8px; }
+.spring-card {
+    padding: 8px 10px 6px 10px;
+    border-radius: 12px;
+    background-color: rgba(127, 127, 127, 0.12);
+    spacing: 1px;
+}
+.spring-card-title { font-size: 0.85em; font-weight: bold; opacity: 0.7; }
+.spring-card-value { font-weight: bold; font-feature-settings: "tnum"; }
+.spring-card-detail { font-size: 0.8em; opacity: 0.6; }
+.spring-graph { height: 34px; margin-top: 4px; }
+.spring-card-cpu .spring-graph { color: -st-accent-color; }
+.spring-card-mem .spring-graph { color: rgba(127, 127, 127, 0.9); }
+
+.spring-head { padding: 6px 0 2px 8px; spacing: 0; }
+.spring-heading { font-size: 0.85em; font-weight: bold; opacity: 0.7; }
+.spring-column { font-size: 0.8em; opacity: 0.6; }
+.spring-head-button { width: 64px; }
+
+.spring-scroll { max-height: 380px; }
+.spring-proc-scroll { max-height: 400px; }
+.spring-list { spacing: 1px; }
+.spring-empty { padding: 18px 8px 14px 8px; opacity: 0.6; }
+.spring-note { padding: 6px 8px 2px 8px; font-size: 0.8em; opacity: 0.6; }
+
+/* Rows: icon, name, figures, buttons */
+.spring-row { border-radius: 10px; padding: 3px 0 3px 6px; }
+.spring-row:hover { background-color: rgba(127, 127, 127, 0.1); }
+.spring-row-line { spacing: 8px; }
+.spring-row-icon { width: 28px; }
+.spring-proc-row .spring-row-icon { width: 18px; }
+.spring-row-names { spacing: 0; }
+.spring-row-name { font-weight: bold; }
+.spring-proc-row .spring-row-name { font-weight: normal; }
+.spring-row-sub { font-size: 0.78em; opacity: 0.6; }
+.spring-num { text-align: right; font-feature-settings: "tnum"; font-size: 0.9em; }
+.spring-num-cpu { width: 48px; }
+.spring-num-mem { width: 70px; }
+.spring-row-actions { spacing: 0; width: 64px; }
+.spring-actions-spacer { width: 64px; }
+
+.spring-icon-button { padding: 6px; border-radius: 99px; }
+.spring-icon-button:hover,
+.spring-icon-button:focus { background-color: rgba(127, 127, 127, 0.2); }
+.spring-icon-button:insensitive { opacity: 0.35; }
+.spring-icon-button:insensitive:hover { background-color: transparent; }
+.spring-kill-button:hover StIcon,
+.spring-kill-button:focus StIcon { color: #e01b24; }
+
+/* Processes */
+.spring-search { margin-left: 6px; border-radius: 10px; }
+.spring-search-icon { icon-size: 14px; padding-right: 4px; }
+.spring-columns { padding: 6px 0 0 6px; spacing: 8px; }
+.spring-col-name { padding-left: 26px; }
+.spring-sort { border-radius: 6px; padding: 2px 0; }
+.spring-sort:hover { opacity: 0.9; }
+.spring-sort:checked { opacity: 0.9; font-weight: bold; }
+.spring-sort-arrow { icon-size: 10px; margin-left: 2px; }
+
+/* Asking before ending */
+.spring-confirm {
+    margin: 4px 6px 4px 0;
+    padding: 8px 10px;
+    border-radius: 10px;
+    background-color: rgba(127, 127, 127, 0.14);
+    spacing: 4px;
+}
+.spring-confirm-title { font-weight: bold; }
+.spring-confirm-note { font-size: 0.85em; opacity: 0.8; }
+.spring-confirm-buttons { spacing: 6px; padding-top: 4px; }
+.spring-confirm-button {
+    padding: 4px 14px;
+    border-radius: 99px;
+    background-color: rgba(127, 127, 127, 0.22);
+    font-weight: bold;
+}
+.spring-confirm-button:hover,
+.spring-confirm-button:focus { background-color: rgba(127, 127, 127, 0.34); }
+.spring-confirm-ok { background-color: -st-accent-color; color: white; }
+.spring-confirm-ok:hover,
+.spring-confirm-ok:focus { background-color: -st-accent-color; color: white; box-shadow: inset 0 0 0 99px rgba(255, 255, 255, 0.12); }
+.spring-confirm-ok.spring-danger,
+.spring-confirm-ok.spring-danger:hover,
+.spring-confirm-ok.spring-danger:focus { background-color: #c01c28; color: white; }
+
+.spring-tip { max-width: 320px; }
