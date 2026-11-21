@@ -21,10 +21,10 @@ Spring has only been tested on Ubuntu 26.04 with GNOME Shell 50.1 on Wayland.
 
 ### With the deb package (recommended)
 
-Download `spring-monitor_1.0.0_all.deb` from the [latest release](https://github.com/webhookstudios/spring/releases/latest), then install it:
+Download `spring-monitor_1.0.1_all.deb` from the [latest release](https://github.com/webhookstudios/spring/releases/latest), then install it:
 
 ```bash
-sudo apt install ./spring-monitor_1.0.0_all.deb
+sudo apt install ./spring-monitor_1.0.1_all.deb
 ```
 
 Log out and back in, then open **Spring** from the apps menu. The first time, that turns Spring on and opens its settings.

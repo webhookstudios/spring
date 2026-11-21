@@ -2,7 +2,7 @@
   "uuid": "spring@webhookstudios.github.io",
   "name": "Spring",
   "description": "A task manager in the top bar: processor and memory use at a glance, use per app, and a process list to end anything that hangs.",
-  "version-name": "1.0.0",
+  "version-name": "1.0.1",
   "shell-version": ["50"],
   "settings-schema": "org.gnome.shell.extensions.spring",
   "url": "https://github.com/webhookstudios/spring"
